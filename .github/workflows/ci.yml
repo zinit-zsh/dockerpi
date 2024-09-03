@@ -35,7 +35,7 @@ jobs:
     needs: build
     steps:
       - name: Download image tarballs
-        uses: actions/download-artifact@v1.0.0
+        uses: actions/download-artifact@v4.1.7
         with:
           name: images
       - name: Print sha256sum of all images
